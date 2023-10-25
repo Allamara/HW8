@@ -2,7 +2,7 @@ import static java.lang.System.*;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("ЗАДАЧА 1");
+System.out.println("ЗАДАЧА 1");
 
         System.out.println("__________");
         int[] apartments = new int[3];
@@ -35,41 +35,74 @@ public class Main {
         System.out.println(movies[2]);
         System.out.println("__________");
 
-        System.out.println("ЗАДАЧА 2");
+System.out.println("ЗАДАЧА 2");
 
-        System.out.print(apartments[0] + ", " + apartments[1] + ", " + apartments[2]);
-        System.out.println();
-        System.out.print(percents[0] + ", " + percents[1] + ", " + percents[2]);
-        System.out.println();
-        System.out.print(movies[0] + ", " + movies[1] + ", " + movies[2]);
-        System.out.println();
-        System.out.println("__________");
-
-        System.out.println("ЗАДАЧА 3");
-        System.out.print(apartments[2] + ", " + apartments[1] + ", " + apartments[0]);
-        System.out.println();
-        System.out.print(percents[2] + ", " + percents[1] + ", " + percents[0]);
-        System.out.println();
-        System.out.print(movies[2] + ", " + movies[1] + ", " + movies[0]);
-        System.out.println();
-        System.out.println("__________");
-
-        System.out.println("ЗАДАЧА 4");
-
-        int[] newApartments = new int[3];
-        newApartments[0] = 1;
-        newApartments[1] = 2;
-        newApartments[2] = 3;
-
-        for (int a = 0; a < newApartments.length; a++) {
-            if (newApartments[a] % 2 == 0) {
-                System.out.print(newApartments[a] + ", ");
-            } else {
-                newApartments[a] = newApartments[a] + 1;
-                System.out.print(newApartments[a] + ", ");
-
-
-            }
+for (int i = 0; i < apartments.length; i++) {
+            if (i == apartments.length - 1)
+                System.out.println(apartments[i]);
+            break;
         }
-    }
-}
+        System.out.print(apartments[i] + ", ");
+
+for (int i = 0; i < percents.length; i++) {
+            if (i == percents.length - 1)
+                System.out.println(percents[i]);
+    break;
+            }
+        System.out.print(apartments[i] + ", ");
+
+for (int i = 0; i < movies.length; i++) {
+             if (i == movies.length - 1)
+                 System.out.println(movies[i]);
+    break;
+             }
+        System.out.print(movies[i] + ", ");
+                 System.out.println("__________");
+
+System.out.println("ЗАДАЧА 3");
+
+                for (int i = apartments.length - 1; i >= 0; i--) {
+                     if (i == 0) {
+                            System.out.println(apartments[i]);
+                            break;
+                        }
+                        System.out.print(apartments[i] + ", ");
+                    }
+                for (int i = percents.length - 1; i >= 0; i--) {
+                     if (i == 0) {
+                            System.out.println(percents[i]);
+                            break;
+                        }
+                        System.out.print(percents[i] + ", ");
+                    }
+                for (int i = movies.length - 1; i >= 0; i--) {
+                        if (i == 0) {
+                            System.out.println(movies[i]);
+                            break;
+                        }
+                        System.out.print(movies[i] + ", ");
+                    }
+
+                    System.out.println("__________");
+
+System.out.println("ЗАДАЧА 4");
+
+                    int[] newApartments = new int[3];
+                    newApartments[0] = 1;
+                    newApartments[1] = 2;
+                    newApartments[2] = 3;
+
+                    for (int a = 0; a < newApartments.length; a++) {
+                        if (newApartments[a] % 2 == 0) {
+                        } else {
+                            newApartments[a] = newApartments[a] + 1;
+                            System.out.print(newApartments[a] + ", ");
+
+
+                        }
+                    }
+                }
+            }
+
+
+
